@@ -10,7 +10,7 @@ const aprsPort = process.env.APRS_PORT;
 const callsign = process.env.CALLSIGN;
 const ssid = process.env.SSID;
 const softwareName = process.env.SOFTWARE_NAME;
-const password = '';
+const password = process.env.PASSWORD;
 
 // Cria um cliente TCP para se conectar ao servidor APRS
 const client = net.createConnection(aprsPort, aprsServer, () => {
